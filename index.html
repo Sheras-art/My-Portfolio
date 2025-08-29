@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="nav-bar">
+          <div class="logo" data-aos="fade-down" data-aos-duration="1000">
+            Muhammad Naveed
+          </div>
+          <div id="nav-links">
+            <img
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              onclick="showSideBar()"
+              src="menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+              id="menu-icon"
+            />
+            <nav id="nav-bar">
+              <ul class="nav-links">
+                <li
+                  class="link1 link"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <a href="index.html">Home</a>
+                </li>
+                <li
+                  class="link1 link"
+                  data-aos="fade-down"
+                  data-aos-duration="1700"
+                >
+                  <a href="about.html">about</a>
+                </li>
+                <li
+                  class="link2 link"
+                  data-aos="fade-down"
+                  data-aos-duration="1900"
+                >
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li
+                  class="link3 link"
+                  data-aos="fade-down"
+                  data-aos-duration="2100"
+                >
+                  <a href="contact.html">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <ul class="active-menu-bar">
+        <li onclick="closeSideBar()">
+          <img
+            src="close_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+            id="close-menu-icon"
+          />
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="main-content">
+        <div class="hero-content">
+          <section id="hero">
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="1900"
+              id="hero-main-heading"
+            >
+              Hi, It's <span>Muhammad Naveed</span>
+            </h1>
+            <h5
+              id="hero-sub-heading"
+              data-aos="fade-right"
+              data-aos-duration="1900"
+            >
+              I'm a <span>Website Developer</span>
+            </h5>
+            <p data-aos="fade-right" data-aos-duration="1900">
+              I'm a passionate <strong>Full Stack Web Developer</strong> who
+              loves turning ideas and dreams into real-world websites. I build
+              modern, responsive, and user-friendly websites using
+              <strong>HTML, CSS, JavaScript, React</strong> for the frontend and
+              <strong>Django</strong> for the backend.
+            </p>
+            <div class="hero-buttons">
+              <button
+                id="hero-btn2"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
+                <a href="contact.html">Hire Me</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="hero-img" data-aos="fade-right" data-aos-duration="1900">
+          <img src="anime-img3.png" alt="anime-image" class="hero-char" />
+          <div class="hero-img-background"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

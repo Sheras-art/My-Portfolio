@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div
+      class="contact-main-heading"
+      data-aos="fade-right"
+      data-aos-duration="2000"
+    >
+      <h1>Contact me</h1>
+    </div>
+    <div class="contact-main" data-aos="fade-left" data-aos-duration="2000">
+      <div id="contact-container">
+        <section id="contact">
+          <div class="contact-heading"><h2>We’re Just a Message Away</h2></div>
+          <!-- Contact Form -->
+          <div id="contact-form">
+            <form action="#" method="POST">
+              <!-- First Name -->
+              <div class="form-group name">
+                <label for="fname">Enter Your Full Name *</label>
+                <div class="inputs">
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="First name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group email">
+                <label for="email">📧 Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="eg: example@gmail.com"
+                  required
+                />
+              </div>
+
+              <!-- Comment -->
+              <div class="form-group comment">
+                <label for="comment">💬 Comment *</label>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="submit-btn">
+                <button type="submit">SEND MESSEGE</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="direct-contact-opts">
+        <ul class="direct-opts">
+          <li id="opt1">
+            <img
+              src="mail_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="email-icon"
+            />
+            <a href="">naveed@gmail</a>
+          </li>
+          <li id="opt1">
+            <img
+              src="call_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="phone-icon"
+            />
+            <span>03293166396</span>
+          </li>
+          <li id="opt1">
+            <img
+              src="schedule_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="clock-icon"
+            />
+            <span>Monday - Friday: 24/7 </span>
+          </li>
+          <li id="opt1">
+            <img
+              src="schedule_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="clock-icon"
+            />
+            <span>Saturday: 10:00AM - 5:00PM </span>
+          </li>
+          <li id="opt1">
+            <img
+              src="schedule_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="clock-icon"
+            />
+            <span>Sunday: 1:00AM - 5:00AM </span>
+          </li>
+          <li id="opt1">
+            <img
+              src="language_24dp_00000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="web-icon"
+            />
+            <a href="https://github.com/Sheras-art">Visit my Github profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

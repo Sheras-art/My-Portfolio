@@ -1,0 +1,13 @@
+body {
+    height: 100dvh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.robot {
+    height: 100dvh;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+}

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #FFFFFF;     /* White background */
+    --text-color: #000000;   /* Black text */
+    --secondary-text-color: #444444; /* ligthBlack text */
+    --accent-color: #FFA500; /* Orange accent */
+    --main-font: 'Poppins', Arial, sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --base-size: 16px;
+    --heading-size: 32px;
+    --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);   /* Subtle shadow */
+    --shadow-medium: 0 4px 10px rgba(0, 0, 0, 0.25); /* Normal shadow */
+    --shadow-strong: 0 8px 20px rgba(0, 0, 0, 0.4);  /* Heavy shadow */
+}
+
+.about-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Untitled\ design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.about-me-box {
+    max-height: 20rem;
+    width: 100%;
+    background-color: darkgray;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.about-me-box > *{
+    margin: 1rem;
+}
+
+.box {
+    max-height: 20rem;
+    width: 25rem;
+    background-color: rgba(255, 255, 255, 0.699);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-medium);
+    border-radius: 10px;
+    margin: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+}
+.box:hover,
+.box:active {
+    transition: all 1s ease;
+    transform: scale(1.05);
+    box-shadow: var(--shadow-strong);
+    z-index: 10;
+}
+.box p, 
+.box ul {
+    margin-top: 10px;
+    line-height: 1.5rem;
+    position: relative;
+}
+.box > * {
+    margin: 10px;
+}
+.contact-box {
+    max-height: 20rem;
+    width: 100%;
+    background-color: darkgray;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.contact-box > *{
+    margin: 1rem;
+}
+
+@media(min-width: 445px) and (max-width: 865px) {
+    .box {
+        width: 100%;
+    }
+}
+@media(min-width: 865px) and (max-width: 1066px) {
+    .box {
+        width: 46%;
+    }
+}
+@media(min-width: 1066px) {
+    .box {
+        width: 47%;
+    }
+}
