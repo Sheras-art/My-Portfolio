@@ -107,7 +107,7 @@ h1 {
     display: none;
 }
 .active-menu-bar {
-    height: 70%;
+    height: 100vh;
     width: 50%;
     background-color: #ffffff8b;
     backdrop-filter: blur(10px);
@@ -217,6 +217,14 @@ h1 {
     font-size: 1rem;
     font-family: var(--p-font);
     width: 100%;
+}
+.hero-buttons {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    position: relative;
 }
 #hero-btn2 {
     height: 2.5rem;
@@ -376,7 +384,7 @@ h1 {
         font-size: 15px;
     }
 }
-@media(min-width: 400px) and (max-width: 600px) {
+@media(min-width: 430px) and (max-width: 600px) {
     .main-content {
         justify-content: center;
         align-items: center;
@@ -425,7 +433,7 @@ h1 {
     }
     
 }
-@media(min-width: 300px) and (max-width: 400px) {
+@media(min-width: 300px) and (max-width: 430px) {
     .main-content {
         justify-content: center;
         align-items: center;
@@ -468,9 +476,10 @@ h1 {
         width: 85%;
     }
     #hero-btn2 {
-        height: 2.5rem;
-        width: 8rem;
+        height: 2rem;
+        min-width: 8rem;
         font-size: 1rem;
         font-weight: 600;
+        
     }
 }
